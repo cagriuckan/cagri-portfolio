@@ -1,0 +1,20 @@
+{
+  "name": "Çağrı Üçkan — Software Developer & AI Automation Consultant",
+  "short_name": "Çağrı Üçkan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020817",
+  "theme_color": "#020817",
+  "icons": [
+    {
+      "src": "/ca.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ca.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
