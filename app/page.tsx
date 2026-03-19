@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Çağrı Üçkan — Software Developer & AI Automation Consultant",
   description:
-    "I build things that run without you. At Codezenic, that means AI agents, automation pipelines, and intelligent systems — production-grade, not prototype. At Kan Themes, high-performance WordPress themes for creators who won't settle for a template.",
+    "Software developer & AI automation consultant. Building production-grade AI agents and automation systems at Codezenic, and WordPress themes at Kan Themes.",
+  alternates: {
+    canonical: "https://cagriuckan.me",
+  },
 };
 
 export default function Home() {
@@ -16,9 +20,12 @@ export default function Home() {
             <img src="/avatar.png" alt="Çağrı Üçkan portrait" />
           </div>
         </div>
-        <div className="status">
-          <span className="dot" />
-          <span className="status-text">Open to Work</span>
+        <div className="header-right">
+          <Link href="/blog" className="blog-nav-link">Blog</Link>
+          <div className="status">
+            <span className="dot" />
+            <span className="status-text">Open to Work</span>
+          </div>
         </div>
       </header>
 
@@ -67,6 +74,7 @@ export default function Home() {
             <a href="https://github.com/cagriuckan" target="_blank" rel="noopener noreferrer">↗ GitHub</a>
             <a href="https://dribbble.com/cagriuckan" target="_blank" rel="noopener noreferrer">↗ Dribbble</a>
             <a href="mailto:uckancagri@gmail.com">↗ Email</a>
+            <Link href="/blog">↗ Blog</Link>
           </nav>
         </div>
         <div className="location-col">
