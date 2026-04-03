@@ -13,7 +13,11 @@
 
 html, body {
   height: 100%;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(240,235,224,0.15) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-position: 0 0;
   color: var(--cream);
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
