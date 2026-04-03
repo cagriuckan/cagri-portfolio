@@ -34,10 +34,6 @@ export default function Home() {
           Codezenic
           <span className="tag">[Founder]</span>
         </a>
-        <div className="intro-item" style={{ "--delay": "0.14s" } as React.CSSProperties}>
-          AI Agent & Automation
-          <span className="tag">[Agency]</span>
-        </div>
         <a href="https://kanthemes.com" target="_blank" rel="noopener noreferrer" className="intro-item" style={{ "--delay": "0.2s" } as React.CSSProperties}>
           Kan Themes
           <span className="tag">[WordPress]</span>

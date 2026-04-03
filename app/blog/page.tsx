@@ -27,6 +27,7 @@ export default function BlogPage() {
       <header>
         <div className="logo-wrapper">
           <Link href="/" className="logo" style={{ textDecoration: "none" }}>
+            
             Çağrı Üçkan
           </Link>
         </div>
