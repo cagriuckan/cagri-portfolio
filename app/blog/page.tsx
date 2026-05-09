@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandLogo } from "@/app/BrandLogo";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -24,23 +25,28 @@ export default function BlogPage() {
 
   return (
     <main className="page-wrapper">
-      <header>
-        <div className="logo-wrapper">
-          <Link href="/" className="logo" style={{ textDecoration: "none" }}>
-            
-            Çağrı Üçkan
+      <header className="site-header">
+        <BrandLogo />
+        <nav className="nav-pill" aria-label="Primary">
+          <Link href="/#ventures" className="nav-pill__link">
+            Work
           </Link>
-        </div>
-        <Link href="/" className="back-link">
-          ← Back to Home
-        </Link>
+          <Link href="/blog" className="nav-pill__link nav-pill__link--active">
+            Blog
+          </Link>
+          <a href="mailto:uckancagri@gmail.com" className="nav-pill__link">
+            Contact
+          </a>
+        </nav>
       </header>
 
       <div className="blog-header">
         <h1 className="blog-title">Blog</h1>
-        <h2 className="blog-description">This is my personal blog where I share my thoughts and experiences on AI, automation, and software development.</h2>
+        <h2 className="blog-description">
+          This is my personal blog where I share my thoughts and experiences on AI, automation, and
+          software development.
+        </h2>
       </div>
-
 
       <section className="post-list">
         {posts.map((post, i) => (

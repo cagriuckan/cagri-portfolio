@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandLogo } from "@/app/BrandLogo";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
@@ -70,15 +71,19 @@ export default async function PostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <header>
-        <div className="logo-wrapper">
-          <Link href="/" className="logo" style={{ textDecoration: "none" }}>
-            Çağrı Üçkan
+      <header className="site-header">
+        <BrandLogo />
+        <nav className="nav-pill" aria-label="Primary">
+          <Link href="/#ventures" className="nav-pill__link">
+            Work
           </Link>
-        </div>
-        <Link href="/blog" className="back-link">
-          ← Back to Blog
-        </Link>
+          <Link href="/blog" className="nav-pill__link nav-pill__link--active">
+            Blog
+          </Link>
+          <a href="mailto:uckancagri@gmail.com" className="nav-pill__link">
+            Contact
+          </a>
+        </nav>
       </header>
 
       <article className="post-article">
@@ -100,7 +105,7 @@ export default async function PostPage({ params }: Props) {
           ← Back to Blog
         </Link>
         <Link href="/" className="back-link">
-          Back to Home →
+          Home →
         </Link>
       </footer>
     </main>
