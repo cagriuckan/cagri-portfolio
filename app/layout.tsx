@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cagriuckan.me"),
   title: "Çağrı Üçkan — Software Developer & AI Automation Consultant",
   description:
-    "I build digital engines that scale without friction. At Codezenic, we engineer AI-native systems and high-performance software—turning manual complexity into automated growth. At Kan Themes, I set the standard for high-speed WordPress architecture. Production-grade by design, intelligent by default.",
+    "I build things that run without you. At Codezenic, that means AI agents, automation pipelines, and intelligent systems — production-grade, not prototype. At Kan Themes, high-performance WordPress themes for creators who won't settle for a template.",
   openGraph: {
     title: "Çağrı Üçkan",
     description:
-      "I build digital engines that scale without friction. At Codezenic, we engineer AI-native systems and high-performance software—turning manual complexity into automated growth. At Kan Themes, I set the standard for high-speed WordPress architecture. Production-grade by design, intelligent by default.",
+      "I build things that run without you. At Codezenic, that means AI agents, automation pipelines, and intelligent systems — production-grade, not prototype. At Kan Themes, high-performance WordPress themes for creators who won't settle for a template.",
     url: "https://cagriuckan.me",
     siteName: "Çağrı Üçkan",
     locale: "en_US",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Çağrı Üçkan — Software Developer & AI Automation Consultant",
     description:
-      "I build digital engines that scale without friction. At Codezenic, we engineer AI-native systems and high-performance software—turning manual complexity into automated growth. At Kan Themes, I set the standard for high-speed WordPress architecture. Production-grade by design, intelligent by default.",
+      "I build things that run without you. At Codezenic, that means AI agents, automation pipelines, and intelligent systems — production-grade, not prototype. At Kan Themes, high-performance WordPress themes for creators who won't settle for a template.",
     creator: "@cagriuckan",
     site: "@cagriuckan",
     images: ["/ca.png"],
@@ -52,13 +52,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@300;400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="site-frame">
+      <body>
         <CursorGlow />
-        <div className="site-shell">{children}</div>
+        {children}
       </body>
     </html>
   );
